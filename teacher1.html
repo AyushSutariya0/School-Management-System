@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="/teacher1" method="post">
+        <div>
+            <button type="submit">NEW STUDENT REGISTRATION</button>
+        </div>
+    </form>
+
+    <form action="/atdclicked" method="post">
+        <div>
+            <button type="submit" id="">Update Attendance</button>
+        </div>
+        <div id="table" style="color: beige;"></div>
+    </form>
+
+
+
+    <form id="studd">
+        <div>
+            <button type="submit" id="studentData">STUDENTS DATA</button>
+        </div>
+        <div id="table" style="color: beige;"></div>
+    </form>
+
+</body>
+<script>
+
+    const studd = document.getElementById("studd");
+    const allStudentList = async () => {
+        const response = await fetch("http://localhost:3000/alldata", {
+            method: 'POST'
+        });
+        const data = await response.json();
+        // console.log(data);
+
+        Object.keys(data).forEach(key => {
+            console.log(key, data[key]);
+        });
+
+
+        const body = document.getElementById("table");
+        tbl = document.createElement('table');
+        tbl.style.width = '700px';
+        tbl.style.border = '1px solid white';
+
+
+        Object.keys(data).forEach(key => {
+            const tr = tbl.insertRow();
+            td=tr.insertCell();
+            td.style.border="1px solid white";
+            td.appendChild(document.createTextNode(data[key].username));
+
+            td=tr.insertCell();
+            td.style.border="1px solid white";
+            td.appendChild(document.createTextNode(data[key].email));
+            
+            td=tr.insertCell();
+            td.style.border="1px solid white";
+            td.appendChild(document.createTextNode(data[key].phone));
+        });
+        body.appendChild(tbl);
+
+
+
+    }
+
+    const one = async (event) => {
+        event.preventDefault();
+        console.log("hi");
+        await fetch("http://localhost:3000/alldata", {
+            method: "POST",
+        }
+        )
+        allStudentList()
+
+    }
+
+
+
+
+
+
+
+
+
+    studd.addEventListener('submit', one);
+
+
+
+
+</script>
+
+</html>

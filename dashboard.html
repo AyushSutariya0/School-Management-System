@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+    <div class="container " id="leftsidebar">
+        <div class="left_sidebar">
+            <div class="close_hamburger_btn">
+                <i class='bx bx-x-circle'></i>
+            </div>
+            <div class="logo ">
+                <h2 onclick="myFunction()">STUDENT</h2>
+            </div>
+            <div class="menu_items ">
+                <div class="menu_item " id="dashboardd" onclick="dashh(this.id)">
+                    <i class='bx bxs-dashboard'></i>
+                    <p>Dashboard</p>
+                </div>
+                <div class="menu_item " id="msg" onclick="dashh(this.id)">
+                    <i class='bx bx-message-rounded-dots'></i>
+                    <p>HomeWork</p>
+                    <i class="fa-regular fa-circle-2 "></i>
+                </div>
+                <div class="menu_item " id="cal" onclick="dashh(this.id)">
+                    <i class='bx bx-calendar'></i>
+                    <p>Calender</p>
+                </div>
+                <div class="menu_item " id="db" onclick="dashh(this.id)">
+                    <i class='bx bx-file-blank'></i>
+                    <p>Result</p>
+                </div>
+                <div class="menu_item " id="Attendance" onclick="dashh(this.id)">
+                    <i class='bx bx-signal-4'></i>
+                    <p>Attendance</p>
+                </div>
+                <div class="menu_item " id="stg" onclick="dashh(this.id)">
+                    <i class='bx bx-cog'></i>
+                    <p>Settings</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="main_content" id="dashboard1">
+            <div class="left_right_sidebar_opener">
+                <div class="hamburger">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <div class="student">
+                    <div class="profile_img">
+                        <img src="https://i.postimg.cc/Sxb6gssQ/img-1.jpg" alt="profile img">
+                    </div>
+                    <div class="profile_name">
+                        <p>ayush</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_navbar">
+                <div class="search_box">
+                    <i class='bx bx-search-alt-2'></i> <input type="text " placeholder="Search">
+                </div>
+                <div class="dark_mode_icon" onclick="darkMode()">
+                    <i class='bx bx-moon'></i>
+                    <i class='bx bx-sun'></i>
+                </div>
+            </div>
+            <div class="menu_item_name_and_filter ">
+                <div class="menu_item_name">
+                    <h2>Database</h2>
+                </div>
+                <div class="filter_and_sort">
+                    <div class="sort sort_and_filter">
+                        <p>Sort</p>
+                        <i class='bx bx-sort-down'></i>
+                    </div>
+                    <div class="filter sort_and_filter">
+                        <p>Filter</p>
+                        <i class='bx bx-filter'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="tab_name">
+                    <p>Student</p>
+                    <p>Teacher</p>
+                    <p>Staff</p>
+                </div>
+                <div class="three_dots">
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Class</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td class="profile_name"><img src="https://i.postimg.cc/BvPJ7FHN/img1.jpg" alt="img"> Gururaj
+                        </td>
+                        <td>001</td>
+                        <td>SY BCA</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>guddu@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name"><img src="https://i.postimg.cc/c1bW8qWT/1656339664529.jpg" alt="img">
+                            Sanket
+                        </td>
+                        <td>012</td>
+                        <td>TY BCS</td>
+                        <td>20</td>
+                        <td>Male</td>
+                        <td>ayush@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name"><img src="https://i.postimg.cc/g2M32zcz/image.png" alt="img"> Hermione
+                        </td>
+                        <td>003</td>
+                        <td>SY BCA</td>
+                        <td>19</td>
+                        <td>Female</td>
+                        <td>Hermione@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name"><img
+                                src="https://i.postimg.cc/c1k4jFvZ/alexander-hipp-iEEBWgY_6lA-unsplash.jpg" alt="img">
+                            Json
+                        </td>
+                        <td>009</td>
+                        <td>SY BCA</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>json@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name"><img src="https://i.postimg.cc/qBbpBPZB/img-2.jpg" alt="img"> Rose</td>
+                        <td>021</td>
+                        <td>SY BCA</td>
+                        <td>19</td>
+                        <td>Female</td>
+                        <td>Rose@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name"><img src="https://i.postimg.cc/SRkqKt5t/img2.jpg" alt="img"> Lily</td>
+                        <td>971</td>
+                        <td>SY BCA</td>
+                        <td>21</td>
+                        <td>Female</td>
+                        <td>Lily@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name"><img src="https://i.postimg.cc/9M3C6fB2/img3.jpg" alt="img"> Tushar
+                        </td>
+                        <td>311</td>
+                        <td>FY BCA</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>Tushar@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name"><img
+                                src="https://i.postimg.cc/xCR77pg2/dahiana-waszaj-XQWfro4LrVs-unsplash.jpg"
+                                alt="img">Aliana</td>
+                        <td>4011</td>
+                        <td>SY BCA</td>
+                        <td>19</td>
+                        <td>Female</td>
+                        <td>Aliana@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name"><img src="https://i.postimg.cc/9MXPK7RT/news2.jpg" alt="img">Alex</td>
+                        <td>0011</td>
+                        <td>SY BCA</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>Alex@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name "><img src=" https://i.postimg.cc/qqwr6xHB/img4.jpg " alt="img ">Sieena
+                        </td>
+                        <td>0041</td>
+                        <td>SY BCA</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>Sieena@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name "><img src="https://i.postimg.cc/528xwmBq/women_trending_1(1).jpg "
+                                alt="img ">Devid</td>
+                        <td>0311</td>
+                        <td>TY BCA</td>
+                        <td>20</td>
+                        <td>Male</td>
+                        <td>Devid@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name "><img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg "
+                                alt="img ">Josh</td>
+                        <td>0041</td>
+                        <td>SY BCA</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>Josh@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="profile_name "><img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg "
+                                alt="img ">John</td>
+                        <td>0013</td>
+                        <td>SY BCA</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>John@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div id="Messenger1">
+        </div>
+
+        <div id="Calender1">
+            <div id="barnodiv">
+                <div class="wrapper">
+                    <header>
+                        <p class="current-date"></p>
+                        <div class="icons">
+                            <span id="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                </svg>
+                            </span>
+
+                            <span id="next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </header>
+
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Database1">
+            <h1>Result</h1>
+        </div>
+
+        <div id="Attendance1">
+            <h1>Attendance</h1>
+        </div>
+
+        <div id="Setting1">
+            <h1>Setting</h1>
+        </div>
+
+
+
+
+
+        <div class="right_sidebar " id="rightsidebar">
+            <div class="notification_and_name ">
+                <div class="close_btn ">
+                    <i class='bx bx-x-circle'></i>
+                </div>
+                <div class="bell ">
+                    <i class='bx bx-bell'></i>
+                    <span></span>
+                </div>
+                <img src="https://i.postimg.cc/Sxb6gssQ/img-1.jpg " alt="profile ">
+                <p id="mysavedname">peri peri</p>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+            <div class="profile ">
+                <div class="img ">
+                    <img src="https://i.postimg.cc/g2M32zcz/image.png " alt="studentImg ">
+                </div>
+                <div class="name_and_class ">
+                    <p>Hermione Granger</p>
+                    <span>BCA Student</span>
+                </div>
+                <div class="contact_info ">
+                    <i class='bx bx-message-rounded-dots'></i>
+                    <i class='bx bx-phone-call'></i>
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <div class="about ">
+                    <h4>About</h4>
+                    <p>BCA student studied at ABC School of Commerce and Computer studies. I really enjoy solving
+                        problems as well as making things pretty and easy to use. I can't stop learning new things; the
+                        more, the better.</p>
+                </div>
+                <div class="other_info ">
+                    <div class="age ">
+                        <h4>Age</h4>
+                        <p>18</p>
+                    </div>
+                    <div class="gender ">
+                        <h4>Gender</h4>
+                        <p id="genderr">Female</p>
+                    </div>
+                    <div class="dob ">
+                        <h4>DOB</h4>
+                        <p id="ddt">12/11/2006</p>
+                    </div>
+                    <div class="address ">
+                        <h4>phone number</h4>
+                        <p id="phn">USA</p>
+                    </div>
+                </div>
+                <div class="student_from_same_class ">
+                    <div class="student_same_class_heading ">
+                        <h4>Student from the same class</h4>
+                    </div>
+                    <div class="student_same_class_img ">
+                        <img src="https://i.postimg.cc/qBbpBPZB/img-2.jpg " alt="img ">
+                        <img src="https://i.postimg.cc/BvPJ7FHN/img1.jpg " alt="img ">
+                        <img src="https://i.postimg.cc/SRkqKt5t/img2.jpg " alt="img ">
+                        <img src="https://i.postimg.cc/xCR77pg2/dahiana-waszaj-XQWfro4LrVs-unsplash.jpg " alt="img ">
+                        <img src="https://i.postimg.cc/9MXPK7RT/news2.jpg " alt="img ">
+                        <span>+12 More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        /*-------codepen celender------*/
+        const daysTag = document.querySelector(".days");
+        const currentDate = document.querySelector(".current-date");
+        const prevNextIcon = document.querySelectorAll(".icons span");
+
+        let currYear = new Date().getFullYear();
+        let currMonth = new Date().getMonth();
+
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        const renderCalendar = () => {
+            const date = new Date(currYear, currMonth, 1);
+            let firstDayofMonth = date.getDay();
+            let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate();
+            let lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay();
+            let lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
+
+            let liTag = "";
+
+            for (let i = firstDayofMonth; i > 0; i--) {
+                liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
+            }
+
+            for (let i = 1; i <= lastDateofMonth; i++) {
+                let isToday = i === new Date().getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear() ? "active" : "";
+                liTag += `<li class="${isToday}">${i}</li>`;
+            }
+
+            for (let i = lastDayofMonth; i < 6; i++) {
+                liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
+            }
+
+            currentDate.innerText = `${months[currMonth]} ${currYear}`;
+            daysTag.innerHTML = liTag;
+        };
+
+        renderCalendar();
+
+        prevNextIcon.forEach(icon => {
+            icon.addEventListener("click", () => {
+                currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+
+                if (currMonth < 0 || currMonth > 11) {
+                    currYear = icon.id === "prev" ? currYear - 1 : currYear + 1;
+                    currMonth = currMonth < 0 ? 11 : 0;
+                }
+
+                renderCalendar();
+            });
+        });
+
+
+
+
+
+
+        /*-------codepen celender------*/
+
+
+        var dashboard1 = document.getElementById("dashboard1");
+        var Messenger1 = document.getElementById("Messenger1");
+        var Calender1 = document.getElementById("Calender1");
+        var Database1 = document.getElementById("Database1");
+        var Attendance1 = document.getElementById("Attendance1");
+        var Setting1 = document.getElementById("Setting1");
+
+
+        dashboard1.style.display = "none";
+        Messenger1.style.display = "none";
+        Calender1.style.display = "none";
+        Database1.style.display = "none";
+        Attendance1.style.display = "none";
+        Setting1.style.display = "none";
+
+
+        function dashh(xxx) {
+            const khop = xxx;
+            console.log(khop);
+
+            if (khop === "dashboardd") {
+                Messenger1.style.display = "none";
+                Calender1.style.display = "none";
+                Database1.style.display = "none";
+                Attendance1.style.display = "none";
+                Setting1.style.display = "none";
+                dashboard1.style.display = "";
+            }
+
+
+            else if (khop === "msg") {
+                Calender1.style.display = "none";
+                Database1.style.display = "none";
+                Attendance1.style.display = "none";
+                Setting1.style.display = "none";
+                dashboard1.style.display = "none";
+                Messenger1.style.display = "";
+
+
+            }
+
+            else if (khop === "cal") {
+                Messenger1.style.display = "none";
+                Database1.style.display = "none";
+                Attendance1.style.display = "none";
+                Setting1.style.display = "none";
+                dashboard1.style.display = "none";
+                Calender1.style.display = "";
+            }
+            else if (khop === "db") {
+                Messenger1.style.display = "none";
+                Calender1.style.display = "none";
+                Attendance1.style.display = "none";
+                Setting1.style.display = "none";
+                dashboard1.style.display = "none";
+                Database1.style.display = "";
+            }
+            else if (khop === "Attendance") {
+                Messenger1.style.display = "none";
+                Calender1.style.display = "none";
+                Database1.style.display = "none";
+                Setting1.style.display = "none";
+                dashboard1.style.display = "none";
+                Attendance1.style.display = "";
+            }
+            else {
+                Messenger1.style.display = "none";
+                Calender1.style.display = "none";
+                Database1.style.display = "none";
+                Attendance1.style.display = "none";
+                dashboard1.style.display = "none";
+                Setting1.style.display = "";
+            }
+
+
+        }
+
+
+
+
+
+        var data;
+        const update = async () => {
+            const displayname = data[0].username;
+            const displayphone = data[0].phone;
+            const displaygender = data[0].gender;
+            const displaydate = data[0].date;
+            var date = new Date(displaydate);
+            var d = date.getDate();
+            var m = date.getMonth() + 1;
+            var y = date.getFullYear();
+
+            var element = document.getElementById("mysavedname");
+            element.innerHTML = displayname;
+            var element1 = document.getElementById("phn");
+            element1.innerHTML = displayphone;
+            var element2 = document.getElementById("genderr");
+            element2.innerHTML = displaygender;
+            var element3 = document.getElementById("ddt");
+            element3.innerHTML = `${d}/${m}/${y}`;
+        }
+
+        const allStudentList = async () => {
+            const response = await fetch("http://localhost:3000/dashstudata", {
+                method: 'post',
+            });
+
+            data = await response.json();
+            console.log(data);
+            update();
+
+
+
+
+
+
+        }
+        allStudentList();
+
+
+
+
+    </script>
+
+</body>
+
+</html>

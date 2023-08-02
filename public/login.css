@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@500&display=swap');
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif; */
+body{
+     margin:0;
+     padding:0;
+     background: #95aece;
+}
+#login-form{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 400px;
+     padding: 40px;
+     transform: translate(-50%, -50%);
+     background: linear-gradient(#669cec, #074da9);
+     box-sizing: border-box;
+     box-shadow: 0 15px 25px #f8f8f8;
+     border-radius: 10px;
+     color: white;
+     letter-spacing: .2em ;
+}
+#login-head{
+     text-align: center;
+     font-family: 'Inter', sans-serif;
+     color:#ffffff ;
+     text-shadow: 0 0 .28rem#f8f8f8;
+}
+#login-details{
+     margin-top: 3rem;
+     margin-left: 1rem;
+     font-size: 1.5rem;    
+}
+label{
+     font-family: 'Inter', sans-serif;   
+}
+#user input{
+     background-color: transparent;
+     border-color: transparent;
+     font-size: 1.2rem;
+     width: 100%;
+     color: white;
+     margin-top: 0.5rem;
+     border-radius: 4px;
+     padding: .3rem;
+     transition: .5S;
+     letter-spacing: .1em ;
+    
+}
+#user input:hover{
+     box-shadow: 0 0 2em 0 #f8f8f8; 
+}
+
+#pass{
+     margin-top: 1rem;
+}
+#pass input{
+     background-color: transparent;
+     border-color: transparent;
+     font-size: 1.2rem;
+     width: 100%;
+     color: white;
+     margin-top: 0.5rem;
+     border-radius: 4px;
+     padding: .3rem;
+     transition: .5S;
+     letter-spacing: .1em ;
+}
+#pass input:hover{
+     box-shadow: 0 0 2em 0 #ffffff;
+}
+
+
+#submit{
+     
+     margin-top: 20%;
+     margin-bottom: 20%;
+     margin-left: 3%;
+     
+}
+#submit input{
+     padding: .5rem;
+     color: #ffffff;
+     background-color: transparent;
+     border: solid 2px #f8f8f8;
+     font-family: 'Inter', sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     letter-spacing: 3px ;
+     border-radius: 0.25em;
+     transition: .5s;
+     text-shadow: 0 0 0.125em white , 0 0 0.25 currentColor ;
+     text-shadow: 0 0 .2rem #f8f8f8;  
+}
+#submit input:hover{
+     background: #f8f8f8;
+     color: rgb(27, 6, 6);
+     box-shadow: 1px 0  3.5em 0 #f8f8f8;
+     text-shadow: 0 0 .2rem white;  
+}
